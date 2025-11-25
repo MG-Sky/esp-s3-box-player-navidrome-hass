@@ -1,5 +1,5 @@
 import requests
-import random, time, asyncio
+import random, time
 
 QUEUE = []
 MEDIA_PLAYER    = "media_player.home_player"
