@@ -2,12 +2,18 @@
 
 This project integrates an ESP32-S3 Box with Navidrome and Home Assistant to create a music player with a touchscreen interface. It allows users to control playback, select playlists, and monitor media player states.
 
+## Prerequisites:
+- **No transcoding** for a player in navidrome - if transcoding is enabled, code and HA is not able to read current song position.
+- **Pyscript Integration** has to be installed.
+
+
 ## Features
 
 - **Playlist Management**: Load and play playlists from Navidrome.
 - **Playback Control**: Play, stop, skip to the next/previous song, and adjust volume.
 - **Touchscreen Interface**: Control playback and select playlists directly from the ESP32-S3 Box touchscreen.
 - **Home Assistant Integration**: Synchronize media player states and control additional devices.
+- **ESP S3 Box**: Is not required you may use services to start and control playlists. 
 
 ---
 
