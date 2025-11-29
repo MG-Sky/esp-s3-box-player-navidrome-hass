@@ -37,8 +37,13 @@ This script handles the interaction with the Navidrome API and manages the playb
 This configuration sets up the ESP32-S3 Box with a touchscreen interface for controlling playback.
 
 #### Key Features:
+
+- **Hardware Buttons**:
+  - Top left button - adjustable switch entity (toggle)
+  - Home button - adjustable brightness (4 varius levels)
+
 - **Touchscreen Buttons**:
-  - Play, Stop, Next, Previous, Volume Up, Volume Down.
+  - Play, Stop, Next, Previous, Volume Up, Volume Down, Add to Favourite.
   - Dropdown menu for playlist selection.
 - **Display**:
   - Shows current song title, artist, and playback status.
