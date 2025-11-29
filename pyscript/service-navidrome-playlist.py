@@ -161,11 +161,13 @@ def next_queue_song():
     if _index < len(QUEUE) - 1: 
         _index += 1
         _log(f"Skipping to next song {_index+1}/{len(QUEUE)}: {QUEUE[_index]}")
+        current_song = f"{NAVIDROME_URL}/stream?id={QUEUE[_index]}&u={USER}&p={PASSWORD}&v=1&c=100"
+
         service.call(
             "media_player",
             "play_media",
             media_content_type="music",
-            media_content_id=QUEUE[_index],
+            media_content_id=current_song,
             entity_id=MEDIA_PLAYER
         )
         return {"status": "playing", "current_song": QUEUE[_index]}
@@ -183,11 +185,12 @@ def previous_queue_song():
     if _index > 0: 
         _index -= 1
         _log(f"Skipping to previous song {_index+1}/{len(QUEUE)}: {QUEUE[_index]}")
+        current_song = f"{NAVIDROME_URL}/stream?id={QUEUE[_index]}&u={USER}&p={PASSWORD}&v=1&c=100"
         service.call(
             "media_player",
             "play_media",
             media_content_type="music",
-            media_content_id=QUEUE[_index],
+            media_content_id=current_song,
             entity_id=MEDIA_PLAYER
         )
         return {"status": "playing", "current_song": QUEUE[_index]}
