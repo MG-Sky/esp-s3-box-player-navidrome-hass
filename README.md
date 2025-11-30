@@ -131,7 +131,6 @@ In esp-s3-box-playa.yaml update the user-facing playlist names in the substituti
 
 Example playlists in substitutions (keep order):
 ```yaml
-# filepath: c:\Users\micha\Downloads\REPOZYTORIA\esp-s3-box-player-navidrome-hass\ESPHome\esp-s3-box-playa.yaml
 substitutions:
   playlists_text:
     - Zywe 138Up
@@ -180,7 +179,7 @@ Key substitution patterns used by the YAML:
 
 Example substitutions (adapt these values to your environment):
 ```yaml
-# filepath: c:\Users\micha\Downloads\REPOZYTORIA\esp-s3-box-player-navidrome-hass\ESPHome\esp-s3-box-playa.yaml
+
 substitutions:
   player_name: home_player
   switch_button_left: komputer_gniazdko
@@ -256,7 +255,6 @@ What to set for each switch:
 
 Example substitutions (copy into the substitutions block in esp-s3-box-playa.yaml and edit to your entities):
 ```yaml
-# filepath: c:\Users\micha\Downloads\REPOZYTORIA\esp-s3-box-player-navidrome-hass\ESPHome\esp-s3-box-playa.yaml
 substitutions:
   # page 2 switches (all eight)
   switch_1: radio_gniazdko
